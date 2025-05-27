@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MonBlog - Le blog qui vous inspire</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="./Nexa Logo.jpg" alt="Logo MonBlog" class="logo">
+      <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#article">Article</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!-- Section Hero -->
+<section class="hero" id="accueil">
+  <h1>Bienvenue sur MonBlog</h1>
+  <p>Inspirez-vous chaque jour avec nos articles experts.</p>
+</section>
+
+
+  <!-- Articles Récents -->
+  <main>
+    <section class="articles">
+      <h2>Articles Récents</h2>
+      <div class="articles-grid">
+        <!-- Article 1 -->
+        <article class="post-card">
+          <div class="post-thumbnail">
+            <img src="images/articles/article1." alt="Santé mentale chez les jeunes">
+          </div>
+          <div class="post-content">
+            <h3 class="post-title">Santé mentale chez les jeunes</h3>
+            <div class="post-meta">
+              <span class="post-date">12 Mai 2025</span>
+              <span class="post-author">Par Julie Fontaine</span>
+            </div>
+            <p class="post-excerpt">Découvrons les enjeux de la santé mentale chez les étudiants d'aujourd'hui et comment y faire face.</p>
+            <a href="#article" class="read-more">Lire la suite</a>
+          </div>
+        </article>
+        <!-- Ajoute ici article2 à article6 -->
+      </div>
+      <!-- Barre latérale -->
+      <aside class="sidebar">
+        <h3>Catégories</h3>
+        <ul>
+          <li>Développement personnel</li>
+          <li>Technologie</li>
+          <li>Éducation</li>
+        </ul>
+        <h3>Populaires</h3>
+        <ul>
+          <li>Comprendre l’IA en 5 minutes</li>
+          <li>Booster sa productivité</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Page Article -->
+    <section class="article-single" id="article">
+      <h2>Article en vedette : La productivité au quotidien</h2>
+      <img src="images/articles/article2.jpg" alt="La productivité au quotidien" class="main-image">
+      <p><strong>Publié le :</strong> 10 Mai 2025 | <strong>Auteur :</strong> Marc Duret</p>
+      <p>Dans cet article, nous explorons des techniques simples et efficaces pour booster votre productivité jour après jour...</p>
+
+      <!-- Réseaux sociaux -->
+      <div class="social-share">
+        <span>Partager :</span>
+        <img src="images/icons/facebook.svg" alt="Partager sur Facebook">
+        <img src="images/icons/twitter.svg" alt="Partager sur Twitter">
+      </div>
+
+      <!-- Commentaires -->
+      <div class="comments-section">
+        <h3>Commentaires</h3>
+        <div class="comment">
+          <p><strong>Camille :</strong> Article très motivant, merci !</p>
+        </div>
+        <form class="comment-form">
+          <input type="text" placeholder="Votre nom" required>
+          <textarea placeholder="Votre commentaire..." required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+
+      <!-- Articles recommandés -->
+      <div class="recommended">
+        <h4>Articles recommandés</h4>
+        <ul>
+          <li><a href="#">Gérer son temps efficacement</a></li>
+          <li><a href="#">Créer une routine matinale</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Page À propos -->
+    <section id="a-propos">
+      <h2>À propos de MonBlog</h2>
+      <div class="about-container">
+        <img src="images/author.jpg" alt="Auteur du blog">
+        <div>
+          <p>MonBlog est né d'une passion pour le partage de connaissances et de conseils utiles au quotidien.</p>
+          <p><strong>Auteur :</strong> Alex Raymond, passionné par le développement personnel et les technologies du futur.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Contact -->
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <form class="contact-form">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="subject">Objet</label>
+        <input type="text" id="subject" name="subject">
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <div class="contact-info">
+        <p>Email : prophetesam17@gmail.com</p>
+        <p>Téléphone : +509 42846756</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MonBlog - Tous droits réservés | Mentions légales</p>
+  </footer>
+
+</body>
+</html>

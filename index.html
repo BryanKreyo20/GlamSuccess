@@ -1,155 +1,174 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MonBlog - Le blog qui vous inspire</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Glam Success - Luxury and Natural Cosmetic Brand" />
+  <title>Glam Success</title>
+  <link rel="stylesheet" href="file.css" />
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <div class="container">
-      <img src="./Nexa Logo.jpg" alt="Logo MonBlog" class="logo">
+      <div class="logo">Glam Success</div>
       <nav>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <ul class="nav-links">
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#article">Article</a></li>
-          <li><a href="#a-propos">À propos</a></li>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#products">Produits</a></li>
+          <li><a href="#about">A-Propos</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#commande">Commandez</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-<!-- Section Hero -->
-<section class="hero" id="accueil">
-  <h1>Bienvenue sur MonBlog</h1>
-  <p>Inspirez-vous chaque jour avec nos articles experts.</p>
-</section>
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Révélez votre éclat naturel</h1>
+      <p>Des produits cosmétiques de luxe, à base d’ingrédients naturels. Parce que vous méritez ce qu’il y a de meilleur.</p>
+      <a href="#products" class="btn">Voir Nos Produits</a>
+    </div>
+  </section>
 
-
-  <!-- Articles Récents -->
-  <main>
-    <section class="articles">
-      <h2>Articles Récents</h2>
-      <div class="articles-grid">
-        <!-- Article 1 -->
-        <article class="post-card">
-          <div class="post-thumbnail">
-            <img src="images/articles/article1." alt="Santé mentale chez les jeunes">
-          </div>
-          <div class="post-content">
-            <h3 class="post-title">Santé mentale chez les jeunes</h3>
-            <div class="post-meta">
-              <span class="post-date">12 Mai 2025</span>
-              <span class="post-author">Par Julie Fontaine</span>
-            </div>
-            <p class="post-excerpt">Découvrons les enjeux de la santé mentale chez les étudiants d'aujourd'hui et comment y faire face.</p>
-            <a href="#article" class="read-more">Lire la suite</a>
-          </div>
-        </article>
-        <!-- Ajoute ici article2 à article6 -->
-      </div>
-      <!-- Barre latérale -->
-      <aside class="sidebar">
-        <h3>Catégories</h3>
-        <ul>
-          <li>Développement personnel</li>
-          <li>Technologie</li>
-          <li>Éducation</li>
-        </ul>
-        <h3>Populaires</h3>
-        <ul>
-          <li>Comprendre l’IA en 5 minutes</li>
-          <li>Booster sa productivité</li>
-        </ul>
-      </aside>
-    </section>
-
-    <!-- Page Article -->
-    <section class="article-single" id="article">
-      <h2>Article en vedette : La productivité au quotidien</h2>
-      <img src="images/articles/article2.jpg" alt="La productivité au quotidien" class="main-image">
-      <p><strong>Publié le :</strong> 10 Mai 2025 | <strong>Auteur :</strong> Marc Duret</p>
-      <p>Dans cet article, nous explorons des techniques simples et efficaces pour booster votre productivité jour après jour...</p>
-
-      <!-- Réseaux sociaux -->
-      <div class="social-share">
-        <span>Partager :</span>
-        <img src="images/icons/facebook.svg" alt="Partager sur Facebook">
-        <img src="images/icons/twitter.svg" alt="Partager sur Twitter">
-      </div>
-
-      <!-- Commentaires -->
-      <div class="comments-section">
-        <h3>Commentaires</h3>
-        <div class="comment">
-          <p><strong>Camille :</strong> Article très motivant, merci !</p>
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Nos Produits</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="./disaar.jpg" alt="Produits Dissar" />
+          <h3>Produits Disaar</h3>
+          <p> Disaar offre des produits de qualité supérieure pour répondre à tous vos besoins en matière de soins de la peau.</p>
         </div>
-        <form class="comment-form">
-          <input type="text" placeholder="Votre nom" required>
-          <textarea placeholder="Votre commentaire..." required></textarea>
-          <button type="submit">Envoyer</button>
-        </form>
-      </div>
-
-      <!-- Articles recommandés -->
-      <div class="recommended">
-        <h4>Articles recommandés</h4>
-        <ul>
-          <li><a href="#">Gérer son temps efficacement</a></li>
-          <li><a href="#">Créer une routine matinale</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Page À propos -->
-    <section id="a-propos">
-      <h2>À propos de MonBlog</h2>
-      <div class="about-container">
-        <img src="images/author.jpg" alt="Auteur du blog">
-        <div>
-          <p>MonBlog est né d'une passion pour le partage de connaissances et de conseils utiles au quotidien.</p>
-          <p><strong>Auteur :</strong> Alex Raymond, passionné par le développement personnel et les technologies du futur.</p>
+        <div class="product-card">
+          <img src="./skincare.jpg" alt="Bamboo Charcoal" />
+          <h3>Bamboo Charcoal</h3>
+          <p>Élimine les impuretés et laisse les pores nets. Exfoliate gently and bring softness back.</p>
+        </div>
+        <div class="product-card">
+          <img src="./huile.jpg" alt="Hair Oil" />
+          <h3>Hair Oil</h3>
+          <p>Overnight care for deep hydration.</p>
+        </div>
+        <div class="product-card">
+            <img src="./Masques a levres.jpg" alt="Maques À lèvres">
+            <h3>Masques à lèvres</h3>
+            <p>Produit hydratant les lèvres</p>
+        </div>
+        <div class="product-card">
+            <img src="./Maquillage.jpg" alt="Maquillage">
+            <h3>Produits de Maquillage</h3>
+            <p>Adapté pour tous types de teints</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  
 
-    <!-- Page Contact -->
-    <section id="contact">
+  <section id="contact" class="contact">
+    <div class="container">
       <h2>Contactez-nous</h2>
-      <form class="contact-form">
-        <label for="name">Nom</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="subject">Objet</label>
-        <input type="text" id="subject" name="subject">
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         <button type="submit">Envoyer</button>
       </form>
-
-      <div class="contact-info">
+    </div>
+    <div class="contact-info">
         <p>Email : prophetesam17@gmail.com</p>
         <p>Téléphone : +509 42846756</p>
       </div>
-    </section>
-  </main>
+      <section id="portfolio" class="portfolio-section">
+        <h2>PORTFOLIO</h2>
+        <p class="subtitle">Un aperçu de notre univers de beauté et d'élégance</p>
+        
+        <div class="portfolio-gallery">
+          <div class="portfolio-card">
+            <img src="./produit glam.jpg" alt="Gloss brillant">
+            <div class="caption">Produits Disponibles</div>
+          </div>
+          <div class="portfolio-card">
+            <img src="./G.S.F.jpg" alt="Stand Glam Success">
+            <div class="caption">Stand Exposition</div>
+          </div>
+          <div class="portfolio-card">
+            <img src="./G.S.jpg" alt="Fabrication artisanale">
+            <div class="caption">Atelier de Création</div>
+          </div>
+          <div class="portfolio-card">
+            <img src="./logo.jpg" alt="Shooting photo">
+            <div class="caption">Glam Success</div>
+          </div>
+          <div class="portfolio-card">
+            <img src="./Man product.jpg" alt="Produits pour hommes">
+            <div class="caption">Produits pour Hommes</div>
+          </div>
+        </div>
+      </section>
+      
+  </section>
+  <section id="commande" class="commande-section">
+    <h2>Placez votre commande ici</h2>
+    <form action="commande" method="POST" class="commande-form" >
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+  
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+  
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="telephone">Téléphone :</label>
+      <input type="tel" id="telephone" name="telephone" required>
+  
+      <label for="produit">Produit :</label>
+      <select id="produit" name="produit" required>
+        <option value="">-- Sélectionner --</option>
+        <option value="gloss">Gloss</option>
+        <option value="scrub">Scrub</option>
+        <option value="masque">Masque à lèvres</option>
+        <option value="produit disaar">Produits Disaar</option>
+        <option value="Bamboo Charcoal">Bamboo Charcoal</option>
+        <option value="Barettes">Barette</option>
+        <option value="Sulfur8">Sulfur8</option>
+        <option value="Huile capillaires">Huile Capilllaire Bel Cheve</option>
+        <option value="creme epilatoire">Creme Epilatoire</option>
+        <option value="vaseline">Vaseline</option>
+        <option value="shampoo">Shampoo</option>
+      </select>
+  
+      <label for="quantite">Quantité :</label>
+      <input type="number" id="quantite" name="quantite" min="1" required>
+  
+      <label for="commentaire">Commentaire (facultatif) :</label>
+      <textarea id="commentaire" name="commentaire" rows="4" placeholder="Exemple : parfum préféré, demande spéciale..."></textarea>
+  
+      <button type="submit">Placer votre commande</button>
+    </form>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>✨A-Propos de  Glam Success</h2>
+      <p>
+       Chez Glam Success, c'est l’élégance accessible, chaque jour.
+Nous sélectionnons avec soin les meilleurs produits cosmétiques du marché, pour les femmes et les hommes qui veulent prendre soin d’eux avec style et assurance.
+Gloss, masques, soins pour les lèvres... chaque article de notre collection est choisi pour sa qualité, son efficacité et son style.
+<p>💄 Notre mission ? Vous proposer des produits tendance, fiables et élégants, qui révèlent votre beauté naturelle sans compromis.</p>
 
-  <!-- Footer -->
+<p>🌟 Vous méritez de briller, chaque jour.</p>
+<p>📦 Passez votre commande dès aujourd’hui et découvrez l’univers chic et vibrant de Glam Success.</p>
+        Chez Glam Success, we believe that beauty should be both luxurious and natural. Our products are handmade with love and enriched with nature's finest ingredients. We aim to empower women to feel confident, radiant, and naturally glamorous.
+      </p>
+    </div>
+  </section>
+
+
   <footer>
-    <p>&copy; 2025 MonBlog - Tous droits réservés | Mentions légales</p>
+    <p>&copy; 2025 Glam Success. Tous droits réservés | Mentions légales.</p>
+    <p>ce site a été créé par KreyoWeb</p>
   </footer>
-
 </body>
 </html>

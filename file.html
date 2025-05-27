@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Glam Success - Luxury and Natural Cosmetic Brand" />
+  <title>Glam Success</title>
+  <link rel="stylesheet" href="file.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Glam Success</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#products">Produits</a></li>
+          <li><a href="#about">A-Propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#commande">Commandez</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Révélez votre éclat naturel</h1>
+      <p>Des produits cosmétiques de luxe, à base d’ingrédients naturels. Parce que vous méritez ce qu’il y a de meilleur.</p>
+      <a href="#products" class="btn">Voir Nos Produits</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Nos Produits</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="./disaar.jpg" alt="Produits Dissar" />
+          <h3>Produits Disaar</h3>
+          <p> Disaar offre des produits de qualité supérieure pour répondre à tous vos besoins en matière de soins de la peau.</p>
+        </div>
+        <div class="product-card">
+          <img src="./skincare.jpg" alt="Bamboo Charcoal" />
+          <h3>Bamboo Charcoal</h3>
+          <p>Élimine les impuretés et laisse les pores nets. Exfoliate gently and bring softness back.</p>
+        </div>
+        <div class="product-card">
+          <img src="./huile.jpg" alt="Hair Oil" />
+          <h3>Hair Oil</h3>
+          <p>Overnight care for deep hydration.</p>
+        </div>
+        <div class="product-card">
+            <img src="./Masques a levres.jpg" alt="Maques À lèvres">
+            <h3>Masques à lèvres</h3>
+            <p>Produit hydratant les lèvres</p>
+        </div>
+        <div class="product-card">
+            <img src="./Maquillage.jpg" alt="Maquillage">
+            <h3>Produits de Maquillage</h3>
+            <p>Adapté pour tous types de teints</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+    <div class="contact-info">
+        <p>Email : prophetesam17@gmail.com</p>
+        <p>Téléphone : +509 42846756</p>
+      </div>
+      <section id="portfolio" class="portfolio-section">
+        <h2>PORTFOLIO</h2>
+        <p class="subtitle">Un aperçu de notre univers de beauté et d'élégance</p>
+        
+        <div class="portfolio-gallery">
+          <div class="portfolio-card">
+            <img src="./produit glam.jpg" alt="Gloss brillant">
+            <div class="caption">Produits Disponibles</div>
+          </div>
+          <div class="portfolio-card">
+            <img src="./G.S.F.jpg" alt="Stand Glam Success">
+            <div class="caption">Stand Exposition</div>
+          </div>
+          <div class="portfolio-card">
+            <img src="./G.S.jpg" alt="Fabrication artisanale">
+            <div class="caption">Atelier de Création</div>
+          </div>
+          <div class="portfolio-card">
+            <img src="./logo.jpg" alt="Shooting photo">
+            <div class="caption">Glam Success</div>
+          </div>
+          <div class="portfolio-card">
+            <img src="./Man product.jpg" alt="Produits pour hommes">
+            <div class="caption">Produits pour Hommes</div>
+          </div>
+        </div>
+      </section>
+      
+  </section>
+  <section id="commande" class="commande-section">
+    <h2>Placez votre commande ici</h2>
+    <form action="commande" method="POST" class="commande-form" >
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+  
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+  
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="telephone">Téléphone :</label>
+      <input type="tel" id="telephone" name="telephone" required>
+  
+      <label for="produit">Produit :</label>
+      <select id="produit" name="produit" required>
+        <option value="">-- Sélectionner --</option>
+        <option value="gloss">Gloss</option>
+        <option value="scrub">Scrub</option>
+        <option value="masque">Masque à lèvres</option>
+        <option value="produit disaar">Produits Disaar</option>
+        <option value="Bamboo Charcoal">Bamboo Charcoal</option>
+        <option value="Barettes">Barette</option>
+        <option value="Sulfur8">Sulfur8</option>
+        <option value="Huile capillaires">Huile Capilllaire Bel Cheve</option>
+        <option value="creme epilatoire">Creme Epilatoire</option>
+        <option value="vaseline">Vaseline</option>
+        <option value="shampoo">Shampoo</option>
+      </select>
+  
+      <label for="quantite">Quantité :</label>
+      <input type="number" id="quantite" name="quantite" min="1" required>
+  
+      <label for="commentaire">Commentaire (facultatif) :</label>
+      <textarea id="commentaire" name="commentaire" rows="4" placeholder="Exemple : parfum préféré, demande spéciale..."></textarea>
+  
+      <button type="submit">Placer votre commande</button>
+    </form>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>✨A-Propos de  Glam Success</h2>
+      <p>
+       Chez Glam Success, c'est l’élégance accessible, chaque jour.
+Nous sélectionnons avec soin les meilleurs produits cosmétiques du marché, pour les femmes et les hommes qui veulent prendre soin d’eux avec style et assurance.
+Gloss, masques, soins pour les lèvres... chaque article de notre collection est choisi pour sa qualité, son efficacité et son style.
+<p>💄 Notre mission ? Vous proposer des produits tendance, fiables et élégants, qui révèlent votre beauté naturelle sans compromis.</p>
+
+<p>🌟 Vous méritez de briller, chaque jour.</p>
+<p>📦 Passez votre commande dès aujourd’hui et découvrez l’univers chic et vibrant de Glam Success.</p>
+        Chez Glam Success, we believe that beauty should be both luxurious and natural. Our products are handmade with love and enriched with nature's finest ingredients. We aim to empower women to feel confident, radiant, and naturally glamorous.
+      </p>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Glam Success. Tous droits réservés | Mentions légales.</p>
+    <p>ce site a été créé par KreyoWeb</p>
+  </footer>
+</body>
+</html>

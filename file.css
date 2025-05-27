@@ -1,0 +1,352 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #fefbf7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background:#fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #b98c57;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #b98c57;
+  }
+  
+ 
+  .hero {
+    background: linear-gradient(to right, #fbeee0, #f7dac3);
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    color: #3b2f2f;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #b98c57;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #a77842;
+  }
+  
+
+  .products {
+    padding: 80px 0;
+    background: #fffaf4;
+  }
+  
+  .products h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #3b2f2f;
+  }
+  
+  .product-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .product-card h3 {
+    margin-bottom: 10px;
+    color: #b98c57;
+  }
+  
+  
+  .about {
+    padding: 80px 0;
+    background:#fefbf7; ;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  
+  .contact {
+    padding: 80px 0;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .contact button {
+    padding: 12px;
+    background: #b98c57;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.8s;
+  }
+  
+  .contact button:hover {
+    background: #a77842;
+  }
+  
+  
+  footer {
+    background: #3b2f2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 32px;
+    }
+  
+    .product-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-card {
+      width: 90%;
+    }
+  
+    .about p,
+    .contact form {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    .logo {
+      font-size: 22px;
+    }
+  
+    .products h2,
+    .about h2,
+    .contact h2 {
+      font-size: 28px;
+    }
+  }
+  .commande-section {
+    background-color: #fff9f3;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .commande-section h2 {
+    color: #d4a373;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .commande-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .commande-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .commande-form input,
+  .commande-form select,
+  .commande-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .commande-form button {
+    background-color: #d4a373;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .commande-form button:hover {
+    background-color: #b98a5a;
+  }
+  
+  .portfolio-section {
+    padding: 80px 20px;
+    background: #fdf9f3;
+    text-align: center;
+  }
+  
+  .portfolio-section h2 {
+    font-size: 36px;
+    color: #b38b00;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    color: #6c5c3c;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 17px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+  }
+  
+  .portfolio-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .portfolio-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.3s ease;
+  }
+  
+  .caption {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 02px 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5a4326;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
